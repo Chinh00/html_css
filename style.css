@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+:root {
+    --color_feature: #AFAEB2;
+}
+a {
+    text-decoration: none;
+}
+
+
+
+/* css box-contac  */
+.container .box .box-right .box-contac img {
+    position: relative;
+    margin-top: 15px;
+}
+
+
+.container .box .box-right .box-contac span {
+    position: relative;
+    font-size: 15px;
+}
+
+.container .box .box-contac {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+/* css box support  */
+.container .box .box-support a{
+    font-weight: bold;
+}
+
+
+.container .box .box-support span, a {
+    font-size: 15px;
+}
+
+.container .box .box-support {
+    position: relative;
+    margin-top: 20px;
+    border: 1px solid var(--color_feature);
+    padding: 10px 20px;
+    text-align: center;    
+}
+
+
+
+/* css footer  */
+
+.container .box .form-box .footer a:last-child {
+    font-size: 13px;
+}
+
+.container .box .form-box .footer a:first-child {
+    position: relative;
+    display: block;
+    font-size: 15px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.container .box .form-box .footer {
+    position: relative;    
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+/* css animation  */
+
+.container .box .box-left::before {
+    content: "";
+    position: absolute;
+    top: 14%;
+    left: 28%;
+    height: 72%;
+    width: 63%;
+    border: 1px solid black;
+    z-index: 100;
+    border: none;
+    animation: slide_image 4s linear infinite;
+}
+
+@keyframes slide_image {
+    0%{
+        background-image: url(/images/Screenshot\ 2023-02-23\ 164854.png);
+    }
+    25% {
+        background-image: url(images/Screenshot\ 2023-02-23\ 164910.png);
+    }
+    50% {
+        background-image: url(images/Screenshot\ 2023-02-23\ 164923.png);
+    }
+
+    100% {
+        background-image: url(images/Screenshot\ 2023-02-23\ 164936.png);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* css content */
+
+.container .box .form-box .content::before {
+    content: "OR";
+    position: absolute;
+    top: 163px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    background-color: white;
+    padding: 4px 10px;
+    font-size: 15px;   
+}
+.container .box .form-box .content hr {
+    position: relative;
+    margin-top: 20px;
+}
+
+.container .box .form-box .content button {
+    background-color: #B3DEFE;
+    border: none;
+    color: white;
+    border-radius: 3px;
+} 
+
+.container .box .form-box .content input, button {
+    position: relative;
+    width: 100%;
+    font-size: 13px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+
+.container .box .form-box .content  {
+    position: relative;
+    padding: 10px;
+    width: 100%;
+}
+
+/* css header  */
+.container .box .form-box .header span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+}
+
+.container .box .form-box .header {
+    position: relative;
+    font-size: 30px;
+    width: 100%;
+    padding: 30px;
+} 
+
+/* css form  */
+
+.container .box .form-box {
+    position: relative;
+    width: 100%;
+    height: 65%;
+    padding: 10px;
+    border: 1px solid var(--color_feature);
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* css box-right  */
+.container .box .box-right {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    padding: 10px 10px 10px 10px;
+    flex-direction: column;
+}
+
+
+/* css box-left  */
+
+.container .box .box-left img {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.container .box .box-left {
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+
+.container .box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    background-color: #FAFAFA;
+}
+
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
